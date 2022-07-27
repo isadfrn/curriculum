@@ -1,0 +1,205 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{assets/class/altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+
+\ifxetexorluatex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+
+% first page, first column
+
+\name{Isabella Nunes}
+\tagline{Software Developer}
+\photoR{2.8cm}{assets/img/profile}
+
+\personalinfo{
+  \email{isadfrn@gmail.com}
+  \phone{+55 64 99979 9732}
+  \location{Blumenau, SC, Brazil}
+  \homepage{www.isadfrn.dev}
+  \twitter{isadfrn}
+  \linkedin{isadfrn}
+  \github{isadfrn}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+
+  \cvsection{About}
+
+  Software Developer who likes Algorithms, Data Structures, Linux, Open Source projects, and teaching code. Worked on big projects and interacted with people from many places. Likes to learn, be part of challenging projects, and deal with technologies, and persons. Also, it teaches code for beginners who want to learn how to program for more than seven years. Experience in Full-Stack development, building a career with a T-shaped approach with depth in back-end development.
+
+  \medskip
+
+  \cvsection{Experience}
+
+  \cvevent{Software Developer}{Philips}{Dec 2020 -- Ongoing}{Blumenau, SC, Brazil}
+  Main activities:
+  \begin{itemize}
+    \item Building and maintaining microservices and internal tools;
+    \item Working on healthcare projects, interacting with USA, India, and Netherlands teams;
+    \item Agile team working with Scaled Agile Framework (SAFe) using Azure DevOps for management;
+    \item Stack and tools: Java, Kotlin, Spring Framework, PL/SQL, Oracle Database, PostgreSQL, MongoDB, JUnit, Mockito, Docker, Kafka, Jenkins, GitHub Actions, Sonar, JavaScript, HTML, CSS, React.js, Angular, and SharePoint;
+    \item Systems: Philips Tasy;
+  \end{itemize}
+
+  \divider
+
+  \cvevent{Programming Instructor}{Digital House Brasil}{Jun 2022 -- Ongoing}{São Paulo, SP, Brazil}
+  Main activities:
+  \begin{itemize}
+    \item Instructor of JavaScript, Node.js, Express.js, SQL, MySQL, Sequelize, HTML, CSS, EJS, and React.js;
+    \item Working on educational sector projects;
+    \item Preparation of code projects and documentation;
+  \end{itemize}
+
+  \divider
+
+  \cvevent{Programming Instructor}{Blue EdTech}{May 2021 -- Jun 2022}{São Paulo, SP, Brazil}
+  Main activities:
+  \begin{itemize}
+    \item Instructor of JavaScript, TypeScript, Node.js, Express.js, HTML, CSS, React.js, NestJS, Next.js, Prisma, Mongoose, PostgreSQL, MongoDB, and Docker;
+    \item Working on educational sector projects;
+    \item Preparation of code projects and documentation;
+  \end{itemize}
+
+  % second page, first column
+
+  \cvevent{Software Developer}{Nutrien Soluções Agrícolas}{Jul 2020 -- Apr 2021}{Rio Verde, GO, Brazil}
+  Main activities:
+  \begin{itemize}
+    \item Building and maintaining integration systems;
+    \item Working on agriculture sector projects;
+    \item Agile team working with Kanban using Jira for management;
+    \item Stack and tools: Java, JavaScript, Python, PL/SQL, AdvPL, Django, Node.js, React.js, React Native, PyQt, MongoDB, MySQL, PostgreSQL, Oracle Database, Docker, Portainer, and Kubernetes;
+    \item Systems: Totvs Protheus, Senior, Simple Sync, Simple Field, Simple Sales, and Fretefy;
+  \end{itemize}
+
+  \cvevent{Programming Instructor}{Senac}{May 2015 -- Dec 2020}{Jataí, GO, Brazil}
+  Main activities:
+  \begin{itemize}
+    \item Instructor of Java, Visual Basic for Applications, HTML, CSS, JavaScript, and Microsoft Excel;
+    \item Working on educational sector projects
+    \item Preparation of code projects and documentation;
+  \end{itemize}
+
+  \divider
+
+  \cvevent{Junior Software Developer}{J. Cruzeiro}{Jul 2018 -- Jul 2020}{Jataí, GO, Brazil}
+  Main activities:
+  \begin{itemize}
+    \item Building and maintaining websites, systems, and indoor infrastructure;
+    \item Working on construction industry projects;
+    \item Stack and tools: Java, Spring Framework, PL/SQL, Oracle Database, JavaScript, HTML, CSS, and React.js;
+    \item Systems: ADM (Santri Sistemas), Senior, Sienge, Linx Degust, Zabbix, Windows Server, Active Directory, Samba, Citrix XenServer, XenApp, XenDesktop, Director, Netscaler, pfSense, Sophos XG, and Openfire Spark;
+    \item Hardware: UTM Sophos, IBM Flex System x240, IBM DS4200, IBM V3700, IBM Tivoli, and IBM TSM3100;
+  \end{itemize}
+
+  \cvsection{A Day of My Life}
+
+  \wheelchart{1.5cm}{0.5cm}{
+    6/8em/accent!30/Sleep,
+    3/8em/accent!40/{Series, movies, games, fishkeeping and music},
+    8/8em/accent!60/Job,
+    2/10em/accent/Sports,
+    5/6em/accent!20/Spending time with family
+  }
+
+  \switchcolumn
+
+  % first page, first column
+
+  \cvsection{My Life Philosophy}
+
+  \begin{quote}
+    ``If you can't do it, practice until you can. If you can do it, practice until you can do it perfectly. If you can do it perfectly, practice until you can do it perfectly every time.``
+  \end{quote}
+
+  \medskip
+
+  \cvsection{Most Proud of}
+
+  \cvachievement{\faTrophy}{Academic Tutor}{In college I was monitor of Algorithms II, Data Structures I, Data Structures II, Software Engineer, Software Project and Computer Organization}
+
+  \medskip
+
+  \cvsection{Strengths}
+
+  \cvtag{Hard-working}
+  \cvtag{Eye for detail}\\
+  \cvtag{Resilient}
+  \cvtag{Self-learner}
+  \cvtag{Communication}
+
+  \divider\smallskip
+
+  \cvtag{Java}
+  \cvtag{Kotlin}
+  \cvtag{JavaScript}
+  \cvtag{Python}
+  \cvtag{Spring Framework}
+  \cvtag{Node.js}
+  \cvtag{Django}
+  \cvtag{React.js}
+  \cvtag{Angular}
+
+  \medskip
+
+  \cvsection{Languages}
+
+  Portuguese \hfill Native
+
+  \divider
+
+  English \hfill C1
+
+  \medskip
+
+  \cvsection{Education}
+
+  \cvevent{PgD\ in Java}{Federal University of Technology - Parana}{Mar 2022 -- Jul 2023}{}
+
+  \divider
+
+  \cvevent{B.Sc.\ in Computer Science}{Federal University of Goiás}{Feb 2014 -- Dec 2018}{}
+
+  % second page, second column
+
+\end{paracol}
+
+\end{document}
