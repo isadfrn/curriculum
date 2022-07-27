@@ -1,0 +1,228 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{assets/class/altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+
+\ifxetexorluatex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Isabella de Freitas Nunes}
+\tagline{Desenvolvedora de Software}
+\photoR{2.8cm}{assets/img/profile}
+
+\personalinfo{
+  \email{isadfrn@gmail.com}
+  \phone{+55 64 99979 9732}
+  \location{Blumenau, SC, Brazil}
+  \homepage{www.isadfrn.dev}
+  \twitter{isadfrn}
+  \linkedin{isadfrn}
+  \github{isadfrn}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+
+  \cvsection{Sobre}
+
+  Desenvolvedora de software que gosta de Algoritmos, Estruturas de Dados, Linux, projetos Open Source e ensino de código. Trabalhou em grandes projetos e interagiu com pessoas de muitos lugares. Gosta de aprender, fazer parte de projetos desafiadores, lidar com tecnologias e pessoas. Além disso, ensina código para iniciantes que desejam aprender a programar há mais de sete anos. Experiência em desenvolvimento Full-Stack, construindo uma carreira com abordagem em forma de T com profundidade no desenvolvimento back-end. No momento em transição de carreira para atuar com desenvolvimento para dispositivos móveis.
+
+  \medskip
+
+  \cvsection{Experiência}
+
+  \cvevent{Desenvolvedora de Software}{Zup Innovation}{Dez 2021 -- Apr 2022}{Uberlândia, MG, Brasil}
+  Principais atividades:
+  \begin{itemize}
+    \item Atuação remota em projetos de agronegócios do Banco Itaú;
+    \item Time ágil trabalhando com Kanban, usando o Jira para gestão.
+    \item Stack e ferramentas: Java, Spring Framework, JavaScript, TypeScript, Node.js, JUnit, Mockito, Docker, Kafka, Api Gateway, EC2 e DynamoDB;
+  \end{itemize}
+
+  \divider
+
+  \cvevent{Desenvolvedora de Software}{Philips}{Dez 2019 -- Jun 2021}{Blumenau, SC, Brasil}
+  Principais atividades:
+  \begin{itemize}
+    \item Atuação remota em projetos de healthcare, interagindo com times dos EUA, India e Países Baixos;
+    \item Time ágil trabalhando com Scaled Agile Framework (SAFe), usando o Azure DevOps para gestão.
+    \item Stack e ferramentas: Java, Kotlin, Spring Framework, PL/SQL, Oracle Database, PostgreSQL, MongoDB, JUnit, Mockito, Docker, Kafka, Jenkins, GitHub Actions, Sonar, JavaScript, HTML, CSS, React.js, Angular e SharePoint;
+    \item Sistemas: Philips Tasy;
+  \end{itemize}
+
+  \divider
+
+  \cvevent{Instrutora de Programação}{Blue EdTech}{Mai 2021 -- Jun 2022}{São Paulo, SP, Brasil}
+  Principais atividades:
+  \begin{itemize}
+    \item Atuação remota em projetos do setor educacional;
+    \item Stack e ferramentas: JavaScript, TypeScript, Node.js, Express.js, HTML, CSS, React.js, NestJS, Next.js, Prisma, Mongoose, PostgreSQL, MongoDB e Docker;
+  \end{itemize}
+
+  \cvevent{Desenvolvedora de Software}{Nutrien Soluções Agrícolas}{Jul 2020 -- Abr 2021}{Rio Verde, GO, Brasil}
+  Principais atividades:
+  \begin{itemize}
+    \item Atuação remota em projetos de agronegócios;
+    \item Time ágil trabalhando com Kanban, usando o Jira para gestão.
+    \item Stack e ferramentas: Java, JavaScript, Python, PL/SQL, AdvPL, Django, Node.js, React.js, React Native, PyQt, MongoDB, MySQL, PostgreSQL, Oracle Database, Docker, Portainer e Kubernetes;
+    \item Sistemas: Totvs Protheus, Senior, Simple Sync, Simple Field, Simple Sales e Fretefy;
+  \end{itemize}
+
+  \divider
+
+  \cvevent{Instrutora de Programação}{Senac}{Mai 2015 -- Dez 2020}{Jataí, GO, Brasil}
+  Principais atividades:
+  \begin{itemize}
+    \item Atuação presencial em projetos do setor educacional;
+    \item Stack e ferramentas: Java, Visual Basic for Applications, HTML, CSS, JavaScript e Microsoft Excel;
+  \end{itemize}
+
+  \divider
+
+  \cvevent{Desenvolvedora de Software}{J. Cruzeiro}{Jul 2018 -- Jul 2020}{Jataí, GO, Brasil}
+  Principais atividades:
+  \begin{itemize}
+    \item Atuação presencial em projetos do segmento da construção civil;
+    \item Stack e ferramentas: Java, Spring Framework, PL/SQL, Oracle Database, JavaScript, HTML, CSS e React.js;
+    \item Sistemas: ADM (Santri Sistemas), Senior, Sienge, Linx Degust, Zabbix, Windows Server, Active Directory, Samba, Citrix XenServer, XenApp, XenDesktop, Director, Netscaler, pfSense, Sophos XG e Openfire Spark;
+    \item Hardware: UTM Sophos, IBM Flex System x240, IBM DS4200, IBM V3700, IBM Tivoli e IBM TSM3100;
+  \end{itemize}
+
+  \medskip
+
+  \cvsection{Um dia na minha vida}
+
+  \wheelchart{1.5cm}{0.5cm}{
+    6/8em/accent!30/Descanso,
+    3/8em/accent!40/{Series, Filmes, Jogos e Músicas},
+    8/8em/accent!60/Trabalho,
+    2/10em/accent/Esportes,
+    5/6em/accent!20/Tempo com a família
+  }
+
+  \newpage
+
+  \switchcolumn
+
+  \cvsection{Filosofia de vida}
+
+  \begin{quote}
+    ``Se você não consegue fazer, pratique até conseguir. Se você consegue fazer, pratique até atingir a perfeição. Se você atingiu a perfeição uma vez, pratique até atingir a perfeição em todas as tentativas.``
+  \end{quote}
+
+  \medskip
+
+  \cvsection{Conquistas}
+
+  \cvachievement{\faTrophy}{Monitoria Acadêmica}{Na graduação fui monitora de Algoritmos II, Estruturas de Dados I, Estruturas de Dados II, Engenheira de Software, Projeto de Software e Arquitetura de Computadores}
+
+  \medskip
+
+  \cvsection{Habilidades}
+
+  \cvtag{Hard-working}
+  \cvtag{Detalhista}
+  \cvtag{Resiliente}
+  \cvtag{Autodidata}
+  \cvtag{Comunicação}
+
+  \divider\smallskip
+
+  \cvtag{JavaScript}
+  \cvtag{Java}
+  \cvtag{Python}
+  \cvtag{React}
+  \cvtag{Next.js}
+  \cvtag{Node.js}
+  \cvtag{Express}
+  \cvtag{Prisma}
+  \cvtag{Spring}
+  \cvtag{NestJS}
+  \cvtag{MongoDB}
+  \cvtag{PostgreSQL}
+  \cvtag{Oracle database}
+  \cvtag{HTML}
+  \cvtag{CSS}
+  \cvtag{Git}
+  \cvtag{GitHub}
+  \cvtag{Docker}
+
+  \medskip
+
+  \cvsection{Línguas}
+
+  Português \hfill Nativo
+
+  \divider
+
+  Inglês \hfill C1
+
+  \medskip
+
+  \cvsection{Educação}
+
+  \cvevent{Pós-graduação em Java}{Universidade Tecnológica Federal do Paraná}{Mar 2022 -- Jul 2023}{}
+
+  \divider
+
+  \cvevent{Bacharela em Ciências da Computação}{Universidade Federal de Goiás}{Fev 2014 -- Dez 2018}{}
+
+  \newpage
+
+  \cvsection{Cursos}
+
+  \cvevent{\href{https://github.com/isadfrn/curriculum/blob/master/certificates/2022/udemy-java-complete.pdf}{Java + Orientação a Objetos + Projetos (51 h)}}{Udemy}{Mar 2020}{}
+
+  \divider
+
+  \cvevent{\href{https://github.com/isadfrn/curriculum/blob/master/certificates/2021/startechfullstack.pdf}{Start Tech - Full Stack - JavaScript, Node e React (120 h)}}{Gama Academy}{Ago 2021}{}
+
+  \divider
+
+  \cvevent{\href{https://github.com/isadfrn/curriculum/blob/master/certificates/2021/wecancodeacademy.pdf}{We Can Code Academy - C sharp (120 h)}}{Gama Academy}{Fev 2021}{}
+
+  \divider
+
+  \cvevent{\href{https://github.com/isadfrn/curriculum/blob/master/certificates/2020/gostack2020.pdf}{Bootcamp GoStack 13 - JavaScript, Node e React (160 h)}}{Rocketseat}{Ago 2020 -- Dez 2020}{}
+
+  \divider
+
+  \cvevent{\href{https://github.com/isadfrn/curriculum/blob/master/certificates/2020/gostack2020.pdf}{Bootcamp Philips Fullstack Developer (132 h)}}{Digital Innovation One}{Mar 2022 -- Abr 2022}{}
+
+\end{paracol}
+
+\end{document}
